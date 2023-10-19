@@ -21,7 +21,9 @@ body > div {
 
 #navbar {
   padding: 2em;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  display: flex;
+  gap: 20px;
 }
 
 #main-section {
@@ -34,13 +36,25 @@ body > div {
   align-items: center;
   justify-content: center;
 }
+/* Nav bar additional setting */
+
 
 .red {
-  background-color: #b05f6d;
-  color: white;
+  background-color: #e5042a;
+  color: black;
 }
 
 .blue {
   background-color: #275db3;
-  color: white;
+  color: whitesmoke;
+}
+
+.home {
+  background-color: darkkhaki;
+  color: rgba(67, 60, 60, 0.547);
+};
+
+.active {
+  font-weight: bold;
+  color: #FF5733; /* Change this to your preferred color */
 }
