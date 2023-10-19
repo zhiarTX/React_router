@@ -4,7 +4,7 @@ import './index.css';
 import Blue from './components/Blue';
 import Red from './components/Red';
 import Home from './components/Home';
-import Footer from './components/footer';
+
 
 
 function App() {
@@ -21,9 +21,17 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/blue" element={<Blue />} />
           <Route path="/red" element={<Red />} />
+          <Route path="/home/:shade" element={<Home />} />
+          <Route path="/blue/:shade" element={<Blue />} />
+          <Route path="/red/:shade" element={<Red />} />
         </Routes>
       </div>
     </div>
+    <footer className='footer'>
+    <Link to="/home">Home</Link>
+        <Link to="/blue">Blue</Link>
+        <Link to="/red">Red</Link>
+    </footer>
     </>
   )
 }
